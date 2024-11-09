@@ -10,5 +10,5 @@ const submitController = require('../controllers/submitController');
 router.get('/', homeController.home);
 router.get('/about', homeController.about);
 router.post('/submit', submitController.submitData);
-
+router.get('/user/:id', homeController.getUser);  // 根据用户ID获取用户信息
 module.exports = router;
